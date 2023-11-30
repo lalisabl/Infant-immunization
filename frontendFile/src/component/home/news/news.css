@@ -1,0 +1,11 @@
+.news__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem 4rem;
+}
+.news__details {
+  margin-top: 1rem;
+}
+.news h4 {
+  margin-bottom: 0.7rem;
+}

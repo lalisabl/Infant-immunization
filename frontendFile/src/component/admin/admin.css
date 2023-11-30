@@ -1,0 +1,72 @@
+/* Sidebar */
+.dashboard-container {
+  position: relative;
+  margin-top: 3.7%;
+  min-height: 100vh;
+}
+.main__container {
+  margin-left: 20%;
+}
+.logo__photo {
+  width: 9rem;
+  height: 2rem;
+}
+.profile__photo {
+  width: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.sidebar {
+  width: 20%;
+  background: var(--color-light);
+  height: 100vh;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 0 7px 2px rgba(7, 7, 7, 0.072);
+  position: fixed;
+  border-radius: 8px;
+  padding: 20px;
+}
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sidebar ul {
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 13px;
+  font-weight: 400;
+  font-size: larger;
+}
+.sidebar li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+
+.dashboard__contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem 4rem;
+  margin-top: 1rem;
+}
+.info__details {
+  margin-top: 1rem;
+}
+.info h4 {
+  margin-bottom: 0.7rem;
+}
+.dashboard.footer__copyright {
+  background-color: var(--color-primary);
+  color: black;
+  text-align: center;
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

@@ -1,0 +1,124 @@
+footer {
+  background: var(--color-secondary);
+  padding-top: 8rem;
+  box-shadow: 0 -1rem 1.5rem hsla(var(--primary-hue), 68%, 42%, 20%);
+  transition: var(--transition);
+}
+footer .nav__menu {
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+.footer__container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1rem;
+}
+.footer__container h3,
+.footer__container h4 {
+  color: var(--color-black);
+  font-size: 1.4rem;
+}
+.footer__socials {
+  width: fit-content;
+  display: flex;
+  gap: 1.5rem;
+  /* margin: 3rem auto 4rem; */
+}
+.footer__items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+.footer__socials a {
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 0.6rem;
+  border-radius: var(--border-radius-3);
+}
+
+.footer__socials a:hover {
+  opacity: 0.7;
+  transform: translateY(-0.5rem);
+}
+
+.footer__copyright {
+  color: white;
+  text-align: center;
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+.contact__links {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.contact__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+  place-items: center;
+  margin-top: 2rem;
+}
+.contact__container a {
+  width: 4rem;
+  background: var(--color-secondary);
+  font-size: 2rem;
+  border-radius: var(--border-radius-1);
+  aspect-ratio: 1/1;
+  color: white;
+  border: 2px solid transparent;
+  display: grid;
+  place-items: center;
+}
+.contact__container a:hover {
+  background: transparent;
+  border-color: var(--color-secondary);
+  color: var(--color-primary);
+  transform: translateY(-0.5rem);
+}
+.form__section {
+  text-align: start;
+}
+.take__input {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+.contact__message .btn {
+  margin-top: 1rem;
+  text-align: right;
+}
+/* @media screen and (max-width: 1024px) {
+  .footer__container {
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer .nav__menu {
+    display: flex;
+  }
+  .footer__container {
+    width: var(--container-width-lg);
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer__items.blogs,
+  .footer__follow {
+    grid-column: 1 / -1;
+  }
+  .blog {
+    padding: 0;
+  }
+  .footer__items.blogs {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .footer__socials {
+    justify-content: space-between;
+  }
+}
+*/

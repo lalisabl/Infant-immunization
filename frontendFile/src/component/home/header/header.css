@@ -1,0 +1,133 @@
+#header {
+  margin-top: 5rem;
+  height: calc(100vh - 5rem);
+  display: grid;
+  place-items: center;
+  background: var(--color-white);
+  transition: var(--transition);
+  background-position: center;
+  background-size: cover;
+}
+/* text=#5CE1E6; */
+/* pri=#006A7D */
+#immunization-header {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--color-secondary);
+}
+
+.immunization-header__CoverPhoto img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  max-width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.immunization-header__container {
+  margin-top: 10rem;
+  margin-left: 7rem;
+  max-width: 75rem;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+.immunization-header__container p {
+  margin: 1rem auto 2rem;
+}
+.immunization-header__cta {
+  margin-top: 20px;
+  display: flex;
+  gap: 2rem;
+}
+.header__container h3 {
+  font-size: 3rem;
+}
+.header__container p {
+  width: 60%;
+  text-align: center;
+  line-height: 2rem;
+  padding: 0;
+  margin: 0.6rem 0 2rem;
+}
+
+.header__cta {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.header__socials {
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  background: var(--color-light);
+  gap: 1rem;
+}
+
+.header__socials a {
+  width: 2.8rem;
+  aspect-ratio: 1/1;
+  color: var(--color-black);
+  display: grid;
+  place-items: center;
+  border-radius: var(--border-radius-3);
+}
+
+.header__socials a:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+  transform: translateX(0.5rem);
+}
+
+/* MEDIA QUERIES (tablets) */
+@media screen and (max-width: 1024px) {
+  header {
+    margin-top: 0;
+    height: 100vh;
+  }
+  .header__container h3 {
+    font-size: 2rem;
+  }
+  .header__container p {
+    font-size: 1.4rem;
+  }
+}
+
+/* MEDIA QUERIES (tablets) */
+@media screen and (max-width: 600px) {
+  #header {
+    margin-top: 3rem;
+  }
+  .header__socials {
+    display: none;
+  }
+  .header__profile {
+    width: 100%;
+    height: auto;
+  }
+
+  .header__container p {
+    width: 100%;
+  }
+
+  .header__cta {
+    gap: 1rem;
+  }
+}

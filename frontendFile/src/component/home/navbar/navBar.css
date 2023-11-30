@@ -1,0 +1,40 @@
+/* navigation container */
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__container a {
+  color: var(--color-black);
+}
+/* for logo */
+.nav__menu,
+.nav__btn {
+  display: flex;
+  gap: 3.5rem;
+  font-size: 1.5rem;
+}
+
+.nav__logo {
+  width: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.sign__btn {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: var(--color-black);
+  padding: 0px;
+  border: none;
+}
+.sign__btn:hover {
+  border-color: var(--color-light);
+  transform: none;
+}
+/* @media screen and (max-width: 1024px) {
+  .nav__menu {
+    display: none;
+  }
+} */

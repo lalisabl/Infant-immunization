@@ -1,0 +1,25 @@
+.card {
+  background: var(--color-light);
+  padding: 1.5rem;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-1);
+  transition: var(--transition);
+}
+
+.card:hover {
+  background: transparent;
+  border-color: var(--color-white);
+  transform: translateY(-0.5rem);
+}
+.card.primary:hover {
+  background: var(--color-light);
+  border-color: var(--color-light);
+  color: black;
+}
+/* .card.light {
+  background: var(--color-light);
+} */
+.card.light:hover {
+  background: transparent;
+  border-color: var(--color-light);
+}
